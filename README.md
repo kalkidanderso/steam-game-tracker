@@ -29,7 +29,7 @@ A sophisticated, production-ready tool for tracking Steam game follower dynamics
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/steam-game-tracker.git
+   git clone https://github.com/kalkidanderso/steam-game-tracker.git
    cd steam-game-tracker
    ```
 
@@ -163,94 +163,3 @@ steam-game-tracker/
 ├── requirements.txt       # Dependencies
 └── README.md             # This file
 ```
-
-### Key Components
-
-1. **SteamTracker**: Scrapes SteamDB for follower data with rate limiting
-2. **RedditTracker**: Uses Reddit's API to track game mentions
-3. **DataProcessor**: Aligns, cleans, and enriches data with statistical metrics
-4. **Visualizer**: Creates professional-quality charts and graphs
-
-## Advanced Configuration
-
-### Environment Variables
-
-Set these for enhanced functionality:
-
-```bash
-export REDDIT_CLIENT_ID="your_reddit_client_id"
-export REDDIT_CLIENT_SECRET="your_reddit_client_secret"
-export REDDIT_USER_AGENT="SteamGameTracker/1.0"
-```
-
-### Rate Limiting
-
-The tool implements respectful rate limiting:
-- Default: 1 second between requests
-- Configurable via `rate_limit_delay` setting
-- Exponential backoff on failures
-
-## Sample Analysis
-
-Here's what you can discover:
-
-- **Follower Growth Patterns**: Identify periods of rapid growth or decline
-- **Social Media Correlation**: Measure how Reddit buzz correlates with Steam follows
-- **Trend Analysis**: Understand daily variations and seasonal patterns
-- **Marketing Impact**: Correlate promotional activities with follower changes
-
-## Contributing
-
-This project demonstrates professional development practices:
-
-- **Clean Architecture**: Modular design with separation of concerns
-- **Error Handling**: Comprehensive exception management
-- **Async Operations**: Non-blocking I/O for performance
-- **Type Hints**: Full type annotation for maintainability
-- **Documentation**: Comprehensive docstrings and comments
-
-## Requirements
-
-See `requirements.txt` for full dependency list. Key requirements:
-- `pandas >= 1.5.0` - Data manipulation
-- `aiohttp >= 3.8.0` - Async HTTP requests
-- `matplotlib >= 3.6.0` - Visualization
-- `beautifulsoup4 >= 4.11.0` - HTML parsing
-
-## Troubleshooting
-
-### Common Issues
-
-**ImportError: No module named 'src'**
-```bash
-# Ensure you're in the project root directory
-cd steam-game-tracker
-python main.py
-```
-
-**Rate Limited**
-```bash
-# Increase delay between requests
-python main.py --config config.json  # Set rate_limit_delay: 2.0
-```
-
-**No Steam Data Found**
-```bash
-# Verify the Steam App ID is correct
-python main.py --app-id 1091500  # Known working ID
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Steam and SteamDB for providing game data
-- Reddit for their accessible API
-- The Python community for excellent libraries
-
----
-
-**Built for professional software development assessment**
-
