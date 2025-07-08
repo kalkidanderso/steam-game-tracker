@@ -1,0 +1,12 @@
+{
+  "game_name": "Cyberpunk 2077",
+  "steam_app_id": 1091500,
+  "tracking_days": 30,
+  "output_dir": "data",
+  "log_level": "INFO",
+  "enable_caching": true,
+  "cache_duration": 3600,
+  "rate_limit_delay": 1.0,
+  "max_retries": 3
+}
+
